@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+#game-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#game-board {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 5px;
+}
+
+/* Grid Cell Styles */
+.grid div {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.grid div:hover {
+    background-color: #bbb;
+}
+
+/* Player Colors */
+.player-A {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.player-B {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+/* Selected Character Highlight */
+.selected {
+    border: 2px solid #000;
+    background-color: #ffe082; /* Highlight Color */
+}
+
+/* Info Section Styles */
+#game-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#move-history {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#history-list li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Game Control Styles */
+#game-controls {
+    margin-top: 20px;
+}
+
+#reset-game {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset-game:hover {
+    background-color: #0b7dda;
+}

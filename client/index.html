@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitwicket Chess-like Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Hitwicket Turn-Based Game</h1>
+        <div id="game-board">
+            <!-- 5x5 Grid -->
+            <div class="grid">
+                <!-- Grid cells will be dynamically generated in script.js -->
+            </div>
+        </div>
+        <div id="game-info">
+            <h2>Current Turn: <span id="current-player"></span></h2>
+            <div id="move-history">
+                <h3>Move History</h3>
+                <ul id="history-list">
+                    <!-- Move history will be dynamically added here -->
+                </ul>
+            </div>
+            <div id="game-controls">
+                <!-- Controls for players to make their moves -->
+                <button id="reset-game">Reset Game</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
